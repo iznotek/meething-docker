@@ -24,6 +24,7 @@ COPY --from=0 /multisocket /gun
 COPY --from=0 /meething /meething
 COPY --from=0 /mediasoup /mediasoup
 COPY --from=0 /certs /certs
+COPY ./meething-all.config.js /meething-all.config.js
 EXPOSE 443/TCP
 EXPOSE 2345/TCP
 EXPOSE 8765/TCP
